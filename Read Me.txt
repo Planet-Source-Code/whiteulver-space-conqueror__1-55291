@@ -1,0 +1,39 @@
+<< Game.ini Settings >>
+------------------------
+
+CONTROL      : 1=Enable Joystick/Joypad , 0=Enable Keyboard
+
+DEBUG        : TRUE=Enable DEBUGER, FALSE=Disable DEBUGER
+
+MUSIC        : 1=Enable MUsic , 0= Disable Music
+
+SKIPFRAMES   : 1=Run with full CPU speed (Best for benchmark), 0=Slow Down Game to 30-35 fps
+//NOTES: if SKIPFRAMES=1 then on high CPU's you will get values > 100 fps and the game will run too fast
+//and will become unplayable. Do this only if you want to test the full CPU speed.
+
+CRAFT_SPEED  : How many pixels our craft has moved on screen [Values: 1-10]
+
+CRAFT        : Selects craft [Values: 1-3]
+//You can add your own craft! Draw two 8-bit bitmaps with windows pallete and join them
+//into one single file. You can do that with a Hex editor such Hex Workshop
+//by copying all bytes from one bitmap and paste to the end of the other. Then add at the first
+//of the file an integer value of 1. Rename your file to craftN.spr where N is the number 
+//of the craft. Must be >3 since we have 3 crafts already.
+
+PLAYER_NAME  : Your name [15 charachters MAX, 1 MIN]
+
+STARFIELD    : 1=Enable Starfield Background (Faster), 0=Enable Image Background
+
+DIFFICULTY   : Set The DIFFICULTY of The game [Values: 1-3]
+
+//Any other values will make the game not run property.
+
+
+<< Game keys >>
+------------------------
+
+Arrow Keys : Navigate Craft
+ctrl	   : Fire
+P          : Pause
+H          : View Hiscores
+Enter      : Start the game
